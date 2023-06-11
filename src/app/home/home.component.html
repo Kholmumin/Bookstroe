@@ -1,0 +1,41 @@
+<div class="header">
+  <p routerLink="main/temuriylar" class="header__text dark">Badiyat</p>
+  <div class="header__left">
+    <a class="header-title" routerLink="/main" routerLinkActive="link-active"
+      >Bosh sahifa</a
+    >
+    <a class="header-book" routerLinkActive="link-active">Kitoblar</a>
+    <div class="header__sign">
+      <a class="sign" *ngIf="!isSigned">Sign In</a>
+      <div *ngIf="isSigned" class="header__profile">
+        <img
+          class="profile-image"
+          src="https://marketplace.canva.com/EAFEits4-uw/1/0/800w/canva-boy-cartoon-gamer-animated-twitch-profile-photo-r0bPCSjUqg0.jpg"
+          width="49"
+          height="49"
+          alt="Profile photo"
+        />
+        <span>
+          <svg
+            width="13"
+            height="9"
+            viewBox="0 0 13 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.966797 0.964844L6.54454 7.62124L12.1223 0.964844"
+              stroke="#0D0D0D"
+              stroke-opacity="0.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <router-outlet></router-outlet>
+</div>

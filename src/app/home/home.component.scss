@@ -1,0 +1,78 @@
+@import "../../styles.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__text {
+  color: $orange;
+  font-size: 25px;
+  line-height: 38px;
+  cursor: pointer;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+}
+
+.header-title,
+.header-book {
+  margin-right: 32px;
+  font-size: 16px;
+  line-height: 144.4%;
+  opacity: 0.3;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.link-active {
+  opacity: 1;
+}
+
+.sign {
+  color: $orange;
+  cursor: pointer;
+}
+
+.header__sign {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 450px) {
+  .header-title,
+  .header-book {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .header__text {
+    font-size: 14px;
+  }
+  .header-title,
+  .header-book {
+    margin-right: 5px;
+  }
+}
